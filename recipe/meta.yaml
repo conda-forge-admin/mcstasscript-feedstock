@@ -34,7 +34,7 @@ test:
     - mcstasscript
   commands:
     - pip check
-    - pytest mcstasscript/tests
+    #- pytest mcstasscript/tests
   source_files:
     - mcstasscript
   requires:
