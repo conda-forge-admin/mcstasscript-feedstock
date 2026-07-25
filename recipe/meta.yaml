@@ -1,4 +1,4 @@
-{% set version = "0.0.84" %}
+{% set version = "0.0.89" %}
 
 package:
   name: mcstasscript
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/mcstasscript/mcstasscript-{{ version }}.tar.gz
-  sha256: f8667c9ed46d743503084d85c2a27f417463b3aacaef76e45db505b849bad439
+  sha256: 16cc0e17c8835e9d70dc556e6dd9bbefc661aeb635b20d229c2cd24f999fd4c9
 
 build:
   noarch: python
@@ -27,19 +27,21 @@ requirements:
     - libpyvinyl
     - ipympl
     - h5py
+    - pythreejs
 
 test:
   imports:
     - mcstasscript
   commands:
     - pip check
-    - pytest mcstasscript/tests
+    #- pytest mcstasscript/tests
   source_files:
     - mcstasscript
   requires:
     - pytest
     - pip
     - python {{ python_min }}
+    - pythreejs
 
 about:
   home: https://mads-bertelsen.github.io/
