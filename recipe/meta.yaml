@@ -39,7 +39,7 @@ test:
     - pytest -v mcstasscript/optional_tests
   source_files:
     - mcstasscript/tests
-	- mcstasscript/optional_tests
+    - mcstasscript/optional_tests
   requires:
     - pytest
     - pip
