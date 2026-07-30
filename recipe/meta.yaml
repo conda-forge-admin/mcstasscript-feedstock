@@ -38,8 +38,7 @@ test:
     - python -c "import pythreejs"
     - pytest -v mcstasscript/optional_tests
   source_files:
-    - mcstasscript/tests
-    - mcstasscript/optional_tests
+    - mcstasscript
   requires:
     - pytest
     - pip
