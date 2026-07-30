@@ -27,16 +27,19 @@ requirements:
     - libpyvinyl
     - ipympl
     - h5py
-    - pythreejs
 
 test:
   imports:
     - mcstasscript
   commands:
     - pip check
-    #- pytest mcstasscript/tests
+    - python -c "import mcstasscript; print(mcstasscript.__file__)"
+    - pytest -v mcstasscript/tests
+    - python -c "import pythreejs"
+    - pytest -v mcstasscript/optional_tests
   source_files:
-    - mcstasscript
+    - mcstasscript/tests
+	- mcstasscript/optional_tests
   requires:
     - pytest
     - pip
@@ -44,7 +47,7 @@ test:
     - pythreejs
 
 about:
-  home: https://mads-bertelsen.github.io/
+  home: https://panosc-vinyl.github.io/McStasScript
   summary: McStas API for creating and running McStas instruments from python scripting
   description: |
     McStasScript is a Python API for McStas, which allows the user to get help,
@@ -55,7 +58,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  doc_url: https://mads-bertelsen.github.io/
+  doc_url: https://panosc-vinyl.github.io/McStasScript
   dev_url: https://github.com/PaNOSC-ViNYL/McStasScript
 
 extra:
