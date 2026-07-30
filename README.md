@@ -3,7 +3,7 @@ About mcstasscript-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mcstasscript-feedstock/blob/main/LICENSE.txt)
 
-Home: https://mads-bertelsen.github.io/
+Home: https://panosc-vinyl.github.io/McStasScript
 
 Package license: BSD-3-Clause
 
@@ -11,7 +11,7 @@ Summary: McStas API for creating and running McStas instruments from python scri
 
 Development: https://github.com/PaNOSC-ViNYL/McStasScript
 
-Documentation: https://mads-bertelsen.github.io/
+Documentation: https://panosc-vinyl.github.io/McStasScript
 
 McStasScript is a Python API for McStas, which allows the user to get help,
 build their instrument, perform simulations and plot the resulting
@@ -158,7 +158,4 @@ Feedstock Maintainers
 * [@mads-bertelsen](https://github.com/mads-bertelsen/)
 * [@tkittel](https://github.com/tkittel/)
 * [@willend](https://github.com/willend/)
-
-
-<!-- dummy commit to enable rerendering -->
 
